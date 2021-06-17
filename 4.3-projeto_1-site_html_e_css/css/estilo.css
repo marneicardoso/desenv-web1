@@ -1,0 +1,159 @@
+
+/* Limpa as formatações padrão dos navegadores (de todos os elementos/tags) */
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*/
+
+body {
+    /* Zerar os valores básicos */
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /* Muda a fonte, o tamanho e a cor */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #232323;
+
+    /* Muda a cor do fundo */
+    background-color: #5e5e5e;
+}
+
+/* Classes */
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #f0fff1;
+}
+
+.banner {
+    height: 150px;
+    font-size: 3em; /* o mesmo que: font-size: 48px; */
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    background-color: #7dcdf2;
+    /*background-image: url("../img/banner.jpg");*/
+    /*background-size: 100% 100%;*/
+    /*background-size: cover;*/
+    /*background: #7dcdf2 url("../img/banner.jpg");*/
+}
+
+.banner > img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    /*margin-left: 15px;*/
+    /*padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+    padding: 10px;
+    /*       TOP    RIGHT   BOTTOM  LEFT */
+    /*padding: 25px   12px    15px    5px;*/
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ed5564;
+    /*border: solid 5px blue;*/
+}
+
+.menu > a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+}
+
+.menu > a:hover {
+    background-color: #e73f50;
+    transition: 0.5s;
+    color: #d3d0d0;
+}
+
+.corpo {
+    text-align: justify;
+    padding: 35px 75px;
+    /*height: 300px;*/
+    min-height: 400px;
+    /*background-color: #7fffd4;*/
+}
+
+.rodape {
+    min-height: 150px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #999999;
+    padding: 25px 0 50px 0;
+    background-color: #232323;
+    /* Cores do arco-íris com gradiente linear */
+    /*background: linear-gradient(90deg, #d80000, #ffa500, #ffff00,#008000, #008fee, #0000ff, #9e009e);*/
+}
+
+.rodape a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.rodape-links {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+
+    /*border: solid rgb(255, 61, 61) 2px;*/
+}
+
+.rodape-conteudo {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+
+    /*border: solid #06d806 2px;*/
+}
+
+.rodape-redes-sociais {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+
+    /*border: solid #ffc400 2px;*/
+}
+
+.icone-rede-social {
+    width: 32px;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+/* Cores do estados dos links (âncoras) */
+/*
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: #7dcdf2;
+}
+
+a:hover {
+    color: #232323;
+}
+
+a:active {
+    color: #ff7f50;
+}
+*/
