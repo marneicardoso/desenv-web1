@@ -1,0 +1,46 @@
+
+/* Comentários em CSS */
+
+/* Usando o Elemento (Tag) BODY como SELETOR  */
+body {
+    background-color: #95a5a6;
+    /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Usando o Elemento (Tag) H3 como SELETOR  */
+h3 {
+    color: #6d0631;
+    text-align: center;
+}
+
+/* Usando o Elemento (Tag) P como SELETOR  */
+p {
+    color: #00478d;
+}
+
+/* OBS: Podemos utilizar qualquer Elemento HTML como SELETOR */
+
+
+/* Classes */
+
+/* Usando uma classe como SELETOR  */
+.citacao {
+    font-family: Consolas, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    background-color: #ffec7f;
+    text-align: right;
+}
+
+/* IDs (os IDs devem ser únicos) */
+
+/* Usando um id como SELETOR  */
+#p2 {
+    font-size: 0.75em; /* 75% do tamanho padrão */
+
+    font-family: Consolas, Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: #7fdbff;
+    text-align: right;
+}
