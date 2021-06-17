@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM com JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Manipulando DOM com JavaScript</h2>
+
+    <h3>DOM (Document Object Model). O DOM é utilizado
+        para manipular o conteúdo do documento HTML.</h3>
+
+    <h4>Exemplos:</h4>
+
+    <ol>
+        <li><a href="#01">Mudando valores com .value</a></li>
+        <li><a href="#02">Mudando valores com .innerText</a></li>
+        <li><a href="#03">Mudando valores com .innerHTML</a></li>
+        <li><a href="#04">Mudando uma imagem (ao clicar)</a></li>
+        <li><a href="#05">Mudando uma imagem (ao passar o mouse)</a></li>
+        <li><a href="#06">Mudando o CSS (estilo)</a></li>
+        <li><a href="#07">Mudando o texto (com uso de parâmetro)</a></li>
+    </ol>
+
+    <hr>
+    <!-- Exemplo 1 -->
+    <h4 id="01">Mudando valores com .value</h4>
+
+    <input type="text" id="texto1" value="Texto padrão">
+    <button onclick="mudarTexto()">Mudar texto</button>
+
+    <hr>
+    <!-- Exemplo 2 -->
+    <h4 id="02">Mudando valores com .innerText</h4>
+
+    <p id="texto2">Texto padrão</p>
+    <button onclick="mudarTexto2()">Mudar texto 2</button>
+
+    <hr>
+    <!-- Exemplo 3 -->
+    <h4 id="03">Mudando valores com .innerHTML</h4>
+
+    <div id="texto3">Texto padrão</div>
+    <button onclick="mudarTexto3()">Mudar texto 3</button>
+
+    <hr>
+    <!-- Exemplo 4 -->
+    <h4 id="04">Mudando uma imagem (ao clicar)</h4>
+
+    <img src="img/favicon.png" id="img1" onclick="mudarImagem()">
+
+    <hr>
+    <!-- Exemplo 5 -->
+    <h4 id="05">Mudando uma imagem (ao passar o mouse)</h4>
+
+    <img src="img/favicon.png" id="img2" onmouseover="mudarImagem2()" onmouseout="mudarImagem3()">
+
+    <hr>
+    <!-- Exemplo 6 -->
+    <h4 id="06">Mudando o CSS (estilo)</h4>
+
+    <p id="texto6">Texto colorido</p>
+
+    <button onclick="mudarCorTexto()">Mudar cor do texto</button>
+
+    <hr>
+    <!-- Exemplo 7 -->
+    <h4 id="07">Mudando o CSS (estilo)</h4>
+
+    <p onclick="mudarTexto4(this)">Clique neste texto</p>
+
+    <img src="img/favicon.png" id="a3">
+
+    <hr>
+    <!-- <button onclick="somar(5, 6)">Somar dois valores</button> -->
+    <button onclick="comer()">Comer</button>
+
+
+    <script src="js/scripts.js"></script>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
