@@ -1,0 +1,106 @@
+
+/* Limpa as formatações padrão dos navegadores (de todos os elementos/tags) */
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*/
+
+body {
+    /* Zerar os valores básicos */
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /* Muda a fonte, o tamanho e a cor */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #232323;
+
+    /* Muda a cor do fundo */
+    background-color: #5e5e5e;
+}
+
+/* Classes */
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #f0fff1;
+}
+
+.banner {
+    height: 150px;
+    font-size: 3em; /* o mesmo que: font-size: 48px; */
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    
+    background-color: #7dcdf2;
+}
+
+.menu {
+    /*margin-left: 15px;*/
+    /*padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+    padding: 10px;
+    /*       TOP    RIGHT   BOTTOM  LEFT */
+    /*padding: 25px   12px    15px    5px;*/
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ed5564;
+    /*border: solid 5px blue;*/
+}
+
+.menu > a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 25px;
+}
+
+.menu > a:hover {
+    background-color: #e73f50;
+    transition: 0.8s;
+    color: #d3d0d0;
+}
+
+.corpo {
+    padding: 35px 75px;
+    /*height: 300px;*/
+    min-height: 400px;
+    /*background-color: #7fffd4;*/
+}
+
+.rodape {
+    height: 150px;
+    font-size: 0.8em;
+    color: #999999;
+    padding: 25px 0 50px 0;
+    background-color: #232323;
+}
+
+
+/* Cores do estados dos links (âncoras) */
+/*
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: #7dcdf2;
+}
+
+a:hover {
+    color: #232323;
+}
+
+a:active {
+    color: #ff7f50;
+}
+*/
