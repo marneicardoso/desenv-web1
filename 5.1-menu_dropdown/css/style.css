@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #999999;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333333;  /* Cor da Barra de Menu */
+}
+
+.navbar a {
+    color: #f9f9f9; /* Cor dos Links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .drop-button {
+    border: none;
+    /*outline: none;*/
+    color: #f9f9f9;
+    padding: 14px 16px;
+    background-color: inherit;  /* Herda a Cor do Elemento Pai */
+    font-size: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .drop-button {
+    background-color: #e23d3f;
+    transition: 0.3s;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #23232399;
+    z-index: 1;
+}
+
+.drop-content a {
+    display: block;
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: left;
+    color: #232323;
+}
+
+.drop-content a:hover {
+    background-color: #353535;
+    color: #f9f9f9;
+}
+
+.dropdown:hover .drop-content {
+    display: block;
+}
+
+
+/* ===== Box-Shadow ===== */
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: #e23d3f;
+    box-shadow: 5px 5px 10px 1px #23232399;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.box1 {
+    background-color: #0066ff;
+    transition: 1s;
+}
+
+.box1:hover {
+    background-color: #003c96;
+    border-radius: 8px;
+}
+
+.box2 {
+    background-color: #1d8f00;
+    transition: 1s;
+}
+
+.box2:hover {
+    background-color: #125800;
+    border-radius: 50%;
+    width: 150px;
+}
+
+.box3 {
+    background-color: #00ffff;
+}
+
+.box3:hover {
+    transform: rotate(-36000deg);
+    transition: 1s;
+}
