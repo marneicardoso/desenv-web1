@@ -1,0 +1,133 @@
+
+/* Limpa as formatações das tags (padrão) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    /* ::::: Imagem de fundo ::::: */
+    
+    /* background-color: #dce0e2; */
+    /* background-image: url(../img/bg01.png); */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    
+    /* background: #dce0e2 url(../img/bg02.png) no-repeat; */
+    
+    /* --- Imagem cobrindo o fundo --- */
+    /* background-size: cover; */
+
+    color: #232323;
+    background: #dce0e2 url(../img/bg01.png);
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    margin-top: 75px;
+    /* margin: 75px auto auto auto; */
+    text-align: center;
+    border-radius: 8px;
+    padding: 35px;
+    background: linear-gradient(90deg, #1f4774, #833964);
+    box-shadow: 0px 0px 5px 0px #232323;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    color: #f9f9f9;
+    /* border: 2px solid red; */
+}
+
+form h1 {
+    margin-bottom: 15px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form ::placeholder {
+    color: #aaaaaa;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.form-button {
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+.form-button button {
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    color: #f9f9f9;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btnLogin {
+    background-color: #198cd8;
+    border: none;
+    margin: 10px 0;
+    transition: 0.3s;
+    margin-right: 15px;
+}
+
+.btnLimpar {
+    background-color: #f9f9f900;
+    border: 2px solid #f9f9f950;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.btnLogin:hover, .btnLimpar:hover {
+    background-color: #f9f9f9;
+    color: #232323;
+    transition: 0.5s;
+}
+
+.arco {
+    background-color: #1f4774;
+    height: 400px;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: -100px;
+    z-index: -1;
+    position: absolute;
+}
+
+footer {
+    margin-top: 100px;
+    min-height: 300px;
+    background: linear-gradient(180deg, #1f4774, #232323);
+    display: flex;
+}
+
+footer div {
+    width: 20%;
+    padding: 35px;
+    color: #aaaaaa;
+
+    /* overflow: hidden; */
+
+    border: #dce0e2 solid 1px;
+}
