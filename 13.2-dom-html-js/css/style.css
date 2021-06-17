@@ -1,0 +1,20 @@
+
+img {
+    width: 180px;
+}
+
+.box {
+    width: 100px;
+    /* height: 100px; */
+    background-color: #ff7f50;
+    padding: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#display {
+    text-align: right;
+    font-family: Consolas;
+    font-size: 1.5rem;
+}
+

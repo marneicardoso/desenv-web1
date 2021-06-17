@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM com JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Manipulando DOM com JavaScript</h2>
+
+    <h3>DOM (Document Object Model) é utilizado
+        para manipular o conteúdo do documento HTML.</h3>
+
+    <h4>Exemplos:</h4>
+
+    <ol>
+        <li><a href="#01">Mudando valores com .value</a></li>
+        <li><a href="#02">Mudando valores com .innerText</a></li>
+        <li><a href="#03">Mudando valores com .innerHTML</a></li>
+        <li><a href="#04">Mudando uma imagem (ao clicar)</a></li>
+        <li><a href="#05">Mudando uma imagem (ao passar o mouse)</a></li>
+        <li><a href="#06">Mudando o CSS (estilo)</a></li>
+        <li><a href="#07">Mudando o texto (com uso de parâmetro)</a></li>
+        <li><a href="#08">Chamando uma function que chama outra</a></li>
+        <li><a href="#09">Clicar, segurar e soltar</a></li>
+        <li><a href="#10">Data e hora</a></li>
+        <li><a href="#11">Calculadora</a></li>
+    </ol>
+
+    <hr>
+    <!-- Exemplo 1 -->
+    <h4 id="01">Mudando valores com .value</h4>
+
+    <input type="text" id="texto1" value="Texto padrão">
+    <button onclick="mudarTexto()">Mudar texto</button>
+
+    <hr>
+    <!-- Exemplo 2 -->
+    <h4 id="02">Mudando valores com .innerText</h4>
+
+    <p id="texto2">Texto padrão</p>
+    <button onclick="mudarTexto2()">Mudar texto 2</button>
+
+    <hr>
+    <!-- Exemplo 3 -->
+    <h4 id="03">Mudando valores com .innerHTML</h4>
+
+    <div id="texto3">Texto padrão</div>
+    <button onclick="mudarTexto3()">Mudar texto 3</button>
+
+    <hr>
+    <!-- Exemplo 4 -->
+    <h4 id="04">Mudando uma imagem (ao clicar)</h4>
+
+    <img src="img/favicon.png" id="img1" onclick="mudarImagem()">
+
+    <hr>
+    <!-- Exemplo 5 -->
+    <h4 id="05">Mudando uma imagem (ao passar o mouse)</h4>
+
+    <img src="img/favicon.png" id="img2" onmouseover="mudarImagem2()" onmouseout="mudarImagem3()">
+
+    <hr>
+    <!-- Exemplo 6 -->
+    <h4 id="06">Mudando o CSS (estilo)</h4>
+
+    <p id="texto6">Texto colorido</p>
+
+    <button onclick="mudarCorTexto()">Mudar cor do texto</button>
+
+    <hr>
+    <!-- Exemplo 7 -->
+    <h4 id="07">Mudando o CSS (estilo)</h4>
+
+    <p onclick="mudarTexto4(this)">Clique neste texto</p>
+
+    <img src="img/favicon.png" id="a3">
+
+    <hr>
+    <!-- Exemplo 8 -->
+    <h4 id="08">Chamando uma function que chama outra</h4>
+
+    <p>Informe os valores</p>
+
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+
+    <button onclick="mostrarResultado(n1, n2)">Calcular</button>
+
+    <div id="resultado">Resultado: 0</div>
+
+    <hr>
+    <!-- Exemplo 9 -->
+    <h3 id="09">Clicar, segurar e soltar</h3>
+
+    <div onmousedown="segurar(this)" onmouseup="soltar(this)" class="box">
+        Clicar!
+    </div>
+
+    <hr>
+    <!-- Exemplo 10 -->
+    <h3 id="10">Data e Hora</h3>
+
+    <p>Clique no botão para mostrar a data</p>
+
+    <button onclick="mostrarData()">Mostrar data</button>
+
+    <p id="data"></p>
+
+    <hr>
+    <!-- Exemplo 11 -->
+    <h3 id="11">Calculadora</h3>
+
+    <input type="number" id="display" value="0" readonly disabled>
+    <br><br>
+
+    <input type="number" id="valor1" placeholder="Informe o primeiro valor">
+    <input type="number" id="valor2" placeholder="Informe o segundo valor">
+
+    <br><br>
+    <button onclick="calcular(valor1, valor2)">Calcular</button>
+
+    <button onclick="limpar()">Limpar</button>
+
+
+    <hr>
+    <!-- <button onclick="somar(5, 6)">Somar dois valores</button> -->
+    <button onclick="comer()">Comer</button>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
