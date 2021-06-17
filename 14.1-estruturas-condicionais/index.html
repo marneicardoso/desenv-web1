@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais</title>
+</head>
+
+<body>
+    <h1>Estruturas Condicionais</h1>
+
+    <h3>1. Algoritmo para verificar a idade</h3>
+
+    <p>Informe a idade e clique no botão Verificar</p>
+
+    <input type="number" id="idade">
+    <button onclick="verificarIdade(idade)">Verificar</button>
+
+    <hr>
+    <h3>2. Escreva um algoritmo que receba 2 valores
+        e mostre o maior valor entre eles.</h3>
+
+    Maior: <input type="text" id="resultado" disabled>
+
+    <br><br>
+    Valor 1: <input type="number" id="valor1">
+
+    <br><br>
+    Valor 2: <input type="number" id="valor2">
+
+    <br><br>
+    <button type="button" onclick="verificarMaior()">Verificar</button>
+
+
+    <hr>
+    <h3>3. Escreva um algoritmo que receba 3 valores.
+        Mostre os valores em ordem crescente.</h3>
+
+    Maior: <input type="text" id="resultado1" disabled>
+
+    Meio: <input type="text" id="resultado2" disabled>
+
+    Menor: <input type="text" id="resultado3" disabled>
+
+    <br><br>
+    Valor 1: <input type="number" id="valorA">
+    <br><br>
+    Valor 2: <input type="number" id="valorB">
+    <br><br>
+    Valor 3: <input type="number" id="valorC">
+
+    <br><br>
+    <button type="button" onclick="mostrarOrdemCrescente()">Ordem Crescente</button>
+
+
+
+    <hr>
+    <h3>4. Calcule 23% do valor do produto.</h3>
+
+    <input type="text" id="resultado4" readonly disabled>
+
+    <input type="number" id="valorProduto" placeholder="Informe o valor do produto">
+
+    <input type="hidden" id="porcentagem" value="23">
+
+    <br><br>
+    <button onclick="calcularPorcentagem(valorProduto, porcentagem)">Calcular</button>
+
+    <hr>
+    <h3>5. Escreva um algoritmo que receba uma região do país
+        e informe o nome dessa região informada.</h3>
+
+    <h4>Regiões:
+        1) Sul
+        2) Sudeste
+        3) Centro-Oeste
+        4) Norte
+        5) Nordeste</h4>
+
+    Região: <input type="number" id="regiao" />
+    
+    <br><br>
+    <input type="text" id="resultado5" disabled>
+
+    <br><br>
+    <button onclick="mostrarRegiao()">Mostrar Região</button>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
