@@ -1,0 +1,34 @@
+
+body {
+    background-color: #dddddd;
+}
+
+nav {
+    padding: 15px 0;
+    color: #dddddd;
+    background-color: #232323;
+}
+
+.container {
+    /* background-color: #cc6262; */
+
+    /* min-height: 300px; */
+}
+
+.row {
+    /* background-color: #5285f3; */
+}
+
+.col {
+    min-height: 350px;
+    /* background-color: #f5c339; */
+
+    border: #232323 2px solid;
+}
+
+form {
+    min-height: 300px;
+    margin: 45px 0;
+
+    /* background-color: #f5c339; */
+}
