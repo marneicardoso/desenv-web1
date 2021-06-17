@@ -1,0 +1,178 @@
+﻿
+/* Variáveis Globais */
+:root {
+    --fonte: 18px;
+    --cor1: #f9f9f9;
+    --cor2: #dddddd;
+    --cor3: #999999;
+    --cor4: #232323;
+    --cor5: #4030ab;
+}
+
+/* Limpa as configurações padrão do navegador */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--fonte);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+nav {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    background-color: var(--cor1);
+    border-bottom: 1px solid var(--cor2);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logotipo {
+    padding-left: 10%;
+    display: inline-block;
+    /* border: 1px solid var(--cor5); */
+}
+
+.logotipo span {
+    color: var(--cor5);
+}
+
+.menu {
+    padding-right: 10%;
+    float: right;
+    /* border: 1px solid var(--cor5); */
+}
+
+.menu a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cor4);
+    padding: 8px 15px;
+}
+
+.menu a:hover {
+    background-color: var(--cor5);
+    opacity: 0.6;
+    color: var(--cor1);
+    transition: 0.3s;
+}
+
+section {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 65px;
+    
+    /* background-color: #999999; */
+    /* min-height: 800px; */
+
+    margin-top: 75px;
+}
+
+.foto {
+    width: 50% auto;
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--cor2);
+    background-color: var(--cor1);
+}
+
+article {
+    padding: 15px;
+    margin: 10px 0;
+    overflow: hidden;
+    background-color: var(--cor1);
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: var(--cor3);
+    background-color: var(--cor4);
+    opacity: 0.7;
+    position: fixed;
+    bottom: 0;
+}
+
+/* ===== Media Queries ===== */
+
+/* Extra small (xs): Smartphone (portrait - retrato) */
+@media (min-width: 400px) {
+    section {
+        width: 90%;
+        margin-top: 110px;
+        /*background-color: #9dfcdc;*/
+    }
+
+    img {
+        width: 96%;
+    }
+}
+
+/* Small (sm): Smartphone (landscape - paisagem) */
+@media (min-width: 576px) {
+    section {
+        width: 96%;
+        margin-top: 110px;
+        /*background-color: #ffd970;*/
+    }
+
+    img {
+        width: 35%;
+    }
+
+    .foto {
+        margin-right: 15px;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    section {
+        width: 80%;
+        margin-top: 75px;
+        /*background-color: #ff70f3;*/
+    }
+
+    img {
+        width: 25%;
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    section {
+        /*background-color: #7085ff;*/
+    }
+
+    img {
+        width: 15%;
+    }
+}
+
+/* Extra Large (xl): Computador */
+@media (min-width: 1200px) {
+    section {
+        /*background-color: #f9f9f9;*/
+    }
+}
