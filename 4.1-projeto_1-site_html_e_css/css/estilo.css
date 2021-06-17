@@ -1,0 +1,51 @@
+
+/* Limpa as formatações padrão dos navegadores (de todos os elementos/tags) */
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+*/
+
+body {
+    /* Zerar os valores básicos */
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    /* Muda a fonte, o tamanho e a cor */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #232323;
+
+    /* Muda a cor do fundo */
+    background-color: #5e5e5e;
+}
+
+/* Classes */
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #f0f8ff;
+
+    height: 800px; /* RETIRAR */
+}
+
+.banner {
+    height: 150px;
+    font-size: 3em; /* o mesmo que: font-size: 48px; */
+    font-weight: bold;
+    text-align: center;
+    line-height: 150px;
+    
+    background-color: #7dcdf2;
+}
+
+.menu {
+    text-align: center;
+
+    background-color: #ed5564;
+    /*border: solid 5px blue;*/
+}
