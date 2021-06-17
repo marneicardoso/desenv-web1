@@ -1,0 +1,46 @@
+
+html {
+    font-size: 32px;
+}
+
+body {
+    margin: 0;
+    padding: 0 10%;
+    /*padding: 0 10vw;*/
+    border: 0;
+    background-color: #999999;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+header {
+    height: 250px;
+    background-color: #217aff;
+}
+
+nav {
+    /* height: 80px;
+    line-height: 80px; */
+    text-align: center;
+    background-color: #34445c;
+    color: #f9f9f9;
+    /* font-size: 1.5rem; */ /* Busca o valor de Root (documento HTML) */
+    font-size: 1.5em; /* Busca o valor do Elemento Pai (Body) */
+    /* font-size: inherit; */
+    padding: 25px;
+}
+
+section {
+    min-height: 800px;
+    padding: 35px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    width: 80%;
+    height: 85px;
+    color: #999999;
+    background-color: #232323;
+    bottom: 0;
+    position: fixed;
+}
