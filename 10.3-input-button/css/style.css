@@ -1,0 +1,39 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Verdana, sans-serif;
+}
+
+nav {
+    background-color: #232323;
+    color: #f9f9f9;
+    padding: 15px;
+}
+
+/* .container {
+    border: solid 2px #c92a2a;
+} */
+
+/* .row {
+    background-color: #4169e1;
+} */
+
+.col {
+    background-color: #f9f9f9;
+    border: solid 1px #a341ff;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+form input {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* .btn {
+    padding: 8px 25px;
+    background-color: #a341ff;
+    border-radius: 5px;
+} */
