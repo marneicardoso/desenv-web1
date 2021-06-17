@@ -1,0 +1,14 @@
+
+body {
+    background-color: #dddddd;
+}
+
+.borda1 {
+    border: 2px solid #bb2a2a;
+    /* height: 200px; */
+}
+
+.borda2 {
+    border: 2px solid #1d4bcc;
+    /* height: 200px; */
+}
