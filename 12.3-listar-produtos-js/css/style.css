@@ -1,0 +1,135 @@
+
+/* Limpa as formatações padrão dos navegadores */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Torna a rolagem mais suave */
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+/* Barra de navegação */
+nav {
+    width: 100%;
+    padding: 5px 15px;
+    position: fixed;
+    z-index: 10;
+    /* top: 0; */
+
+    background-color: #f7f7f7;
+    border-bottom: solid 2px #dddddd;
+}
+
+.menu {
+    padding: 15px 0;
+    text-align: right;
+}
+
+.menu ul {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #232323;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 15px 25px;
+    transition: 0.8s;
+}
+
+.menu a:hover {
+    background-color: #e2b53a;
+    color: #493b14;
+    transition: 0.8s;
+}
+
+.menu li {
+    list-style-type: none;
+    display: inline;
+}
+/* /barra-navegação */
+
+/* Banner */
+.img-banner {
+    width: 100%;
+}
+
+.bloco {
+    padding: 35px;
+    min-height: 800px;
+    padding-top: 80px;
+}
+
+/* Produto */
+.produto {
+    margin-top: 15px;
+    padding: 15px;
+    transition: 0.8s;
+}
+
+.produto:hover {
+    background-color: #e2b53a;
+    transition: 0.5s;
+    box-shadow: 0 1px 5px 2px #23232350;
+}
+
+.foto {
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-produto {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.img-produto:hover {
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+.nome-produto {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding: 5px 0;
+}
+
+.descricao-produto {
+    height: 70px;
+    text-align: left;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.preco-produto {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.btn {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 25px;
+    color: #999999;
+    background-color: #232323;
+    margin-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
