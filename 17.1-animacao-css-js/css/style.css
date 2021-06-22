@@ -1,0 +1,187 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #232323;
+    background-color: #232323;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 25px 45px 450px 45px;
+    background-color: #f7f7f7;
+}
+
+.box-1 {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    text-align: center;
+    line-height: 150px;
+    background-color: #999999;
+
+    /* Chama a animação */
+    animation-name: a4;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    /* animation-fill-mode: forwards; */
+    animation-direction: alternate;
+}
+
+/* Animações em CSS */
+@keyframes a1 {
+    from {
+        background-color: #6495ed;
+    }
+    to {
+        background-color: #12c92a;
+    }
+}
+
+@keyframes a2 {
+    to { background-color: #dc143c; }
+}
+
+@keyframes a3 {
+    0% { background-color: #1468ac; }
+    25% { background-color: #ffd000; }
+    50% { background-color: #dc143c; }
+    75% { background-color: #74ac14; }
+    100% { background-color: #9f12d6; }
+}
+
+@keyframes a4 {
+    0% {
+        background-color: #1468ac;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: #ffd000;
+        left: 500px;
+        top: 0;
+    }
+    50% {
+        background-color: #dc143c;
+        left: 350px;
+        top: 350px;
+        width: 250px;
+        /* opacity: 0; */
+        /* transform: rotate(720deg); */
+        /* transform: scale(1.5); */
+    }
+    75% {
+        background-color: #74ac14;
+        left: 50px;
+        top: 350px;
+    }
+    100% {
+        background-color: #9f12d6;
+        left: 0;
+        top: 0;
+    }
+}
+
+/* Login animado */
+#modal {
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    width: 400px;
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 96%;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modal button {
+    background-color: #f2c800;
+}
+
+#modal button:hover {
+    background-color: #ffd815;
+}
+
+#modal.animar {
+    /* background-color: #6495ed; */
+
+    /* Chamar a animação */
+    animation-name: slide;
+    animation-duration: 0.3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards; /* Termina e fica */
+    /*  fill-mode: Modo de preenchimento, por padrão
+        faz a animação e volta ao início */
+}
+
+@keyframes slide {
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#load {
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    border: 10px solid;
+    border-radius: 50%;
+
+    border-top-color: #008cff99;
+    border-left-color: #008cff77;
+    border-bottom-color: #008cff55;
+    border-right-color: #008cff33;
+
+    display: none;
+}
+
+#load.loader {
+    animation-name: load;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#status {
+    margin: auto;
+    display: none;
+    text-align: center;
+}
